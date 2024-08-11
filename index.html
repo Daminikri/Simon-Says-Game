@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <h1>Instructions</h1>
+
+    <div class="instructions">
+        <ol>
+            <li><strong>Starting the Game:</strong>
+                <ul>
+                    <li>you will see the title "Simon Says Game" and a message "Press any key to start."</li>
+                    <li>Press any key on your keyboard to start the game.</li>
+                </ul>
+                <br>
+            </li>
+            <li><strong>Game Interface:</strong>
+                <ul>
+                    <li>After starting the game, you will see four colored buttons arranged in a grid.</li>
+                    <li>Each button has a different color: red, yellow, green, and purple.</li>
+                </ul>
+                <br>
+            </li>
+            <li><strong>Gameplay:</strong>
+                <ul>
+                    <li>The game will start at level 1.</li>
+                    <li>Simon (the computer) will flash a random colored button.</li>
+                    <li>Your goal is to remember the sequence of colors flashed by Simon and repeat them correctly.</li>
+                    <li>Click on the colored buttons in the same sequence as Simon flashed them.</li>
+                </ul>
+                <br>
+            </li>
+            <li><strong>Level Progression:</strong>
+                <ul>
+                    <li>Each time you correctly repeat the sequence, the game advances to the next level.</li>
+                    <li>The level number is displayed at the top of the screen.</li>
+                    <li>Simon will add one more color to the sequence with each level.</li>
+                </ul>
+                <br>
+            </li>
+            <li><strong>User Input:</strong>
+                <ul>
+                    <li>Click on the colored buttons to repeat the sequence.</li>
+                    <li>Each time you click a button, it will flash to indicate your selection.</li>
+                </ul>
+                <br>
+            </li>
+            <li><strong>Game Over:</strong>
+                <ul>
+                    <li>If you make a mistake by clicking the wrong button or clicking them in the wrong order, the game ends.</li>
+                    <li>You will see a "Game Over" message along with your final score.</li>
+                    <li>Press any key on your keyboard to restart the game.</li>
+                </ul>
+                <br>
+            </li>
+            <li><strong>Scoring:</strong>
+                <ul>
+                    <li>Your score is based on the highest level you reached before making a mistake.</li>
+                    <li>Try to beat your previous score by remembering longer sequences as the game progresses.</li>
+                </ul>
+                <br>
+            </li>
+            <li><strong>Restarting the Game:</strong>
+                <ul>
+                    <li>To play again, simply press any key on your keyboard to restart the game.</li>
+                    <li>The game will reset, and you can start over from level 1.</li>
+                </ul>
+                <br>
+            </li>
+        </ol>
+    </div>
+
+    <h2>Press any key to start</h2>
+
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn red" type="button" id="red">1</div>
+            <div class="btn yellow" type="button" id="yellow">2</div>
+        </div>
+
+        <div class="line-two">
+            <div class="btn green" type="button" id="green">3</div>
+            <div class="btn purple" type="button" id="purple">4</div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
